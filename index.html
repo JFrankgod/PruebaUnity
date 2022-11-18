@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" width=1400 height=800 style="width: 1400px; height: 800px; background: #231F20"></canvas>
-    <script src="Build/Reef-Balancer.loader.js"></script>
+    <script src="Build/Foo.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -18,9 +18,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Reef-Balancer.data.unityweb",
-        frameworkUrl: "Build/Reef-Balancer.framework.js.unityweb",
-        codeUrl: "Build/Reef-Balancer.wasm.unityweb",
+        dataUrl: "Build/Foo.data.unityweb",
+        frameworkUrl: "Build/Foo.framework.js.unityweb",
+        codeUrl: "Build/Foo.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Reef Balancer",
